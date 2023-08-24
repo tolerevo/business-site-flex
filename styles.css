@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** UNIVERSAL STYLES **/
+
+* {
+  background-origin: border-box;
+}
+
+:root {
+  --main-background: linear-gradient(62deg, #3c4d5d 0%, #343547 100%);
+  --main-blue: #45567d;
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-light-blue: hsla(204, 89%, 82%, 1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif, monospace;
+  background-image: var(--main-background, gray);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-size: 16px;
+  height: 100%;
+}
+
+a {
+  color: var(--main-red, red);
+  text-decoration-line: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+h2,h3 {
+  font-family: 'Roboto', sans-serif, monospace;
+  font-size: 32px;
+  color: var(--main-light-blue, lightblue);
+
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  color: var(--main-white, white);
+}
+
+main#main {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+
+main#main img {
+  border-radius: 9px;
+
+}
+
+/**Header section **/
+
+#header {
+  top: 0;
+  position: fixed;
+  display: inline-flex;
+  width: 100%;
+  margin: 0;
+  background-color: var(--main-white, white);
+  height: 4em;
+  z-index: 1;
+}
+
+h1#title {
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: 300;
+  color: var(--main-red, white);
+  min-width: 30%;
+  width: 40%;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 40%;
+  line-height: 3;
+  margin: 0 auto;
+}
+
+#header img {
+  aspect-ratio: 40/30;
+  margin-top: 0em;
+  width: auto;
+  height: auto;
+  padding: 0 1em 0.5em 1em;
+}
+
+
+/** Mission section **/
+
+section.jumbotron {
+  width: 100%;
+  position: relative;
+}
+
+section.jumbotron div.flex-container {
+  margin-top: 1em;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-flow: row nowrap;
+}
+
+h2#Mission {
+  color: var(--main-light-blue, skyblue);
+  font-family: 'Roboto', sans-serif, monospace;
+  font-size: 32px;
+  width: 100%;
+  padding-top: 3em;
+  padding-left: 1em;
+
+}
+
+span {
+  text-align: center;
+  margin-top: 7em;
+  color: var(--main-white, white);
+}
+
+div.flex-container img {
+  width: 50%
+}
+
+/**Services Section**/
+
+section.our-services {
+  width: 100%;
+  position: block;
+}
+
+h2#Treatments {
+  margin-top: 1em;
+  padding: 1em;
+}
+
+section.our-services div.flex-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+section.our-services div.surgery,
+section.our-services div.laboratory,
+section.our-services div.drugstore,
+section.our-services div.nurse,
+section.our-services div.psichology,
+section.our-services div.aesthetic {
+  width: 45%;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+div#treatment img.treatment {
+  width: 80%;
+}
+
+div#treatment h3 {
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 12em;
+}
+
+/**Staff section **/
+
+section.staff {
+  width: 100%;
+  display: block;
+
+}
+
+
+h2#staff {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1em;
+  padding: 1em;
+
+}
+
+div.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 90%;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 2em;
+}
+
+div.flex-container figure img.staff {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 8rem;
+}
+
+
+div.flex-container figure {
+  width: 45%;
+  margin: 0 auto;
+  flex: 1 1 300px;
+}
+
+div.flex-container figure h3,
+div.flex-container figure p {
+  text-align: center;
+  padding: 1em 0;
+}
+
+/**Footer **/
+footer {
+  bottom: 0;
+  position: static;
+  display: inline-flex;
+  width: 100%;
+  margin: 0;
+  background-color: var(--main-white, white);
+  height: 3em;
+  z-index: 1;
+}
+
+footer h4 {
+  line-height: 3;
+  margin-left: 1em;
+  color: var(--main-blue, red);
+}
+
+footer nav {
+  line-height: 2;
+  right: 1em;
+  position: absolute;
+}
