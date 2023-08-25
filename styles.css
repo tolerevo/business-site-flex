@@ -167,14 +167,34 @@ a {
   padding: 16px;
 }
 
+a:link {
+cursor: pointer;
+}
+
+a:visited {
+color: var(--main-blue);
+text-decoration: underline;
+}
+
+a:hover {
+transition: all 750ms ease-in-out 100ms;
+color:var(--main-white);
+background-color: var(--main-blue, white);
+}
+
+a:active {
+transition: all 100ms step-end 100ms;
+}
+
 h2,h3 {
-  font-family: 'Roboto', sans-serif, monospace;
+  font-family: 'Montserrat', sans-serif, monospace;
   font-size: 32px;
   color: var(--main-light-blue, lightblue);
 
 }
 
 p {
+  font-family: 'Montserrat', sans-serif, monospace;
   font-size: 24px;
   text-align: center;
   color: var(--main-white, white);
@@ -187,7 +207,7 @@ main#main {
 }
 
 
-main#main img {
+main img {
   border-radius: 9px;
 
 }
@@ -237,6 +257,9 @@ ul {
 section.jumbotron {
   width: 100%;
   position: relative;
+  top: 4em;
+  background-color: var(--main-blue, blue);
+  padding-bottom: 2em;
 }
 
 section.jumbotron div.flex-container {
@@ -252,15 +275,18 @@ h2#Mission {
   font-family: 'Roboto', sans-serif, monospace;
   font-size: 32px;
   width: 100%;
-  padding-top: 3em;
+  padding-top: 1em;
   padding-left: 1em;
 
 }
 
-span {
-  text-align: center;
-  margin-top: 7em;
+div#jumbotron p {
+  margin-top: 15vh;
   color: var(--main-white, white);
+  padding:1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 1.1px;
 }
 
 div.flex-container img {
@@ -276,7 +302,7 @@ section.our-services {
 
 h2#Treatments {
   margin-top: 1em;
-  padding: 1em;
+  padding: 2em;
 }
 
 section.our-services div.flex-container {
@@ -302,9 +328,8 @@ div#treatment img.treatment {
 }
 
 div#treatment h3 {
-  text-align: left;
+  text-align: start;
   padding-top: 1em;
-  padding-left: 12em;
 }
 
 /**Staff section **/
@@ -312,6 +337,7 @@ div#treatment h3 {
 section.staff {
   width: 100%;
   display: block;
+  background-color: var(--main-blue, blue);
 
 }
 
@@ -325,7 +351,8 @@ h2#staff {
 
 }
 
-div.flex-container {
+div.flex-container.right,
+div.flex-container.left {
   display: flex;
   flex-flow: row nowrap;
   max-width: 90%;
@@ -340,6 +367,8 @@ div.flex-container figure img.staff {
   width: 50%;
   margin: 0 auto;
   padding-left: 8rem;
+  padding-top: 1em;
+  border-radius: 8px;
 }
 
 
@@ -349,10 +378,18 @@ div.flex-container figure {
   flex: 1 1 300px;
 }
 
-div.flex-container figure h3,
-div.flex-container figure p {
-  text-align: center;
+figure h3
+{  text-align: center;
   padding: 1em 0;
+}
+
+div.flex-container p{
+  color: var(--main-white, white);
+  padding:1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 1.1px;
+  
 }
 
 /**Footer **/
